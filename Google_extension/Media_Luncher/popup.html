@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Launcher</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      type="text/css"
+    />
+    <style>
+      html,
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        margin: 0;
+        min-height: 180px;
+        padding: 0;
+        width: 384px;
+      }
+
+      h1 {
+        font-family: "Menlo", monospace;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        color: cornflowerblue;
+      }
+
+      a:link,
+      a:visited {
+        color: black;
+        outline: 0;
+        text-decoration: none;
+      }
+
+      img {
+        width: 30px;
+      }
+
+      .modal-header {
+        align-items: center;
+        border-bottom: 0.5px solid #dadada;
+      }
+
+      .modal-content {
+        padding: 0 22px;
+        font-size: 18px;
+        color: rgb(102, 100, 237);
+      }
+
+      .modal-icons {
+        border-top: 0.5px solid #dadada;
+        height: 50px;
+        width: 100%;
+      }
+
+      .logo {
+        padding: 16px;
+      }
+
+      .logo-icon {
+        vertical-align: text-bottom;
+        margin-right: 12px;
+      }
+
+      .version {
+        color: #444;
+        font: size 18px;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 22px;
+      }
+      .flex {
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+        width: 120px;
+      }
+      .flex:hover {
+        opacity: 0.4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="modal-header">
+      <h1 class="logo">
+        <img
+          src="icons/icon_128.png"
+          alt="Bluemoon Launcher"
+          class="logo-icon"
+        />
+        Media Launcher <span class="version">(1.0)</span>
+      </h1>
+    </div>
+    <div class="modal-content">
+      <p>Easily access to some Media content</p>
+    </div>
+
+    <div class="modal-icons">
+      <div class="flex-container">
+        <div class="flex">
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="youtube.png" />
+          </a>
+        </div>
+        <div class="flex">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="facebook.png" />
+          </a>
+        </div>
+        <div class="flex">
+          <a href="https://www.twitch.tv/" target="_blank">
+            <img src="twitch.png" />
+          </a>
+        </div>
+        <div class="flex">
+          <a href="https://github.com/" target="_blank">
+            <img src="github.png" />
+          </a>
+        </div>
+        <div class="flex">
+          <a href="https://mail.google.com/" target="_blank">
+            <img src="gmail.png" />
+          </a>
+        </div>
+        <div class="flex">
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="linkedin.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
